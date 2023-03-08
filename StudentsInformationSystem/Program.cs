@@ -9,10 +9,7 @@ namespace StudentsInformationSystem
         static void Main(string[] args)
         {
             var menu = new MainMenu();
-            menu.StartMenu(); 
-
-          
-            
+            menu.StartMenu();
         }
     }
 }
