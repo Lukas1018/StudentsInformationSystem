@@ -5,10 +5,10 @@ namespace StudentsInformationSystem.Repositories
 {
     public class DepartmentsRepository : IRepository<Department>
     {
-        public List<Department> Departments { get; private set; }
+        public List<Department> DepartmentsList { get; private set; }
         public DepartmentsRepository() 
         { 
-            Departments = new List<Department>();
+            DepartmentsList = new List<Department>();
         }
 
         public void Add(Department entity)
@@ -26,7 +26,7 @@ namespace StudentsInformationSystem.Repositories
         public void GetAll()
         {
             using var dbContext = new StudentContext();
-            Departments = dbContext.Departments.ToList();
+            DepartmentsList = dbContext.Departments.ToList();
         }
     }
 }
